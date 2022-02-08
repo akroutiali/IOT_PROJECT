@@ -1,3 +1,38 @@
+
+Project Description :
+
+create two applications communicating with each other (high-level IPC) where application A
+monitors the changes to a file which contains surrounding Wireless APs in JSON format and informs
+application B which is responsible for displaying the change in format of:
+      .SSID’s SNR and/or channel value has changed from X to Y
+      .SSID is added to the list with SNR and channel
+      .SSID is removed from the list.
+      
+      
+"access_points": [
+{
+"ssid": "MyAP",
+"snr": 63,
+"channel": 11
+},
+{
+"ssid": "YourAP",
+"snr": 42,
+"channel": 1
+},
+{
+"ssid": "HisAP",
+"snr": 54,
+"channel": 6
+}
+]
+}
+cat /tmp/access_points
+
+
+
+
+
 *************Solution Design ******************
 
 1-Develop  shared library "libparser.so" to parse json file and save the content  in text file .
