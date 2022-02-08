@@ -63,4 +63,4 @@ bin :the bin directory contains the applicationA and applicationB binary and sha
 obj :the obj directory contains the obj file 
 
 
-*NOTE :applicationA will check file change evry 30 s .this parameter is treated in the callback function"void threadFunc()" of the thread applicationA in file programA.c we can modify as we want depends to the requirement 
+
