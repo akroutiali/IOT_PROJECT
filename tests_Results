@@ -1,0 +1,50 @@
+
+{"access_points": 
+[
+{
+"ssid": "MyAP",
+"snr": 63,
+"channel": 11
+},
+{
+"ssid": "YourAP",
+"snr": 42,
+"channel": 1
+},
+{
+"ssid": "HisAP",
+"snr": 54,
+"channel": 6
+}
+]
+}
+"/tmp/access_point"
+
+
+*Test1:add new ssid ali and remove MyAP
+-Result:
+>aliak@aliak-Vostro-3500:~/MYWORKSPACE/HimindsAssesment$ ./bin/applicationA 
+>aliak@aliak-Vostro-3500:~/MYWORKSPACE/HimindsAssesment$ ./bin/applicationB 
+ali is added to the list with SNR 63 and channel 11 
+MyAP is removed from the list
+
+*Test2 :change snr to 50 and channel to 11  of the ssid YourAP :
+Result:
+>aliak@aliak-Vostro-3500:~/MYWORKSPACE/HimindsAssesment$ ./bin/applicationB 
+YourAP's SNR has changed from 42 to 50 
+YourAP's channel has changed from 1 to 11
+
+*Test3:change all the snr and the channel of accesspoints:
+Result:
+>aliak@aliak-Vostro-3500:~/MYWORKSPACE/HimindsAssesment$ ./bin/applicationB 
+ali's SNR has changed from 63 to 20 
+ali's channel has changed from 11 to 8 
+YourAP's SNR has changed from 50 to 40 
+YourAP's channel has changed from 11 to 10 
+HisAP's SNR has changed from 54 to 30 
+HisAP's channel has changed from 6 to 9
+
+*Test4:remove the following ssid "ali" :
+Result:
+>aliak@aliak-Vostro-3500:~/MYWORKSPACE/HimindsAssesment$ ./bin/applicationB 
+ali is removed from the list  
