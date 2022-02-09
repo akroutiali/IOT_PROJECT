@@ -43,7 +43,7 @@ cat /tmp/access_points
 
 4-Develop applicationB :listen to the message sent from applicationA and print them .
 
-5-prepare the Makefile the manage the compilation phase.
+5-prepare the Makefile to manage the compilation phase.
 
 -IPC :the IPC used is socket since those two application will run on the same Device the efficient methode is to use AF_UNIX socket .
 
